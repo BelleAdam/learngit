@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一键海报生成</title>
+	<style type="text/css">
+		a,textarea{
+			display: block;
+		}
+		#code{
+			margin: 20px auto;
+		}
+		#gg{
+			width: 300px;
+			height: 50px;
+			margin: 15px;
+		}
+		.fgx{
+			height: 40px;
+			background: #fff;
+			margin: 20px;
+		}
+		.fix-right{
+			position: fixed;
+			right: 15px;
+			top: 0;
+			color: #fff;
+			width: 200px;
+			padding: 20px;
+			background: #000;
+			word-wrap:break-word;
+			word-break:break-all;
+		}
+		.del{
+			background: #f00;
+			color: #fff;
+			padding: 3px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="fix-right">
+		<li>提示</li>
+		<li>设计稿宽度750px</li>
+		<li>背景图片命名规则，日期+下划线+字母,例如：20181031_a.jpg,</li>
+		<li>背景图片上传目录:wap/pocket/20170516poster/images/</li>
+		<li>saleName：销售名称</li>
+		<li>carName：品牌名称</li>
+		<li>dealerCity：地区</li>
+		<li>mobile：手机号</li>
+		<li>dealerAddress：地址</li>
+		<li>level：等级</li>
+		<li>proName：主营品牌</li>
+		<li>dealerName：经销商简称</li>
+		<li>写法：{saleName} {carName}</li>
+	</ul>
+	<!-- http://192.168.33.119/pcauto/mobile/2016/0421autopocket/poster/index.html?salesId=386&fromApp=1&modlueName=modlue375&head={size:1.5,x:1,y:11.3,bc:%22f00%22}&urlPoster=1&bgName={name:%22test.png%22,h:13.34}&code={size:1.5,x:5,y:11.3,bc:%22f00%22}&text=[{x:3,y:11,ft:.35,cr:%22f00%22,txt:%22{saleName}{proName}111%22},{x:3,y:12,txt:%222222%22}] -->
+	<a href="http://cms.pcauto.com.cn:8080/pcauto/ulMain.jsp" target="_blank">点击去到上传背景图片页面</a>
+	<p>账号：zhangjinyong<br>密码：Qw525249</p>
+	<h2>用谷歌浏览器</h2>
+	<h2>大小不带边框</h2>
+	<h2>距离带边框</h2>
+	<div class="doc">
+		<div id="head">
+		<a href="javascript:;" target="_self" title="" class="del" onclick="del(this)">不显示头像</a>
+		<p>头像参数</p>
+		<input type="text" placeholder="头像大小" class="size" value="" name="">
+		<input type="text" placeholder="左边距离" class="left" value="" name="">
+		<input type="text" placeholder="顶部距离" class="top" value="" name="">
+		<input type="text" placeholder="边框颜色，可选" value="" class="code" name="">
+		</div>
+		<div class="fgx"></div>
+		<div id="bg">
+		<p>背景参数</p>
+		<input type="text" placeholder="背景图名称" value="" class="name" name="">
+		<input type="text" placeholder="背景图高度" value="" class="h" name="">
+		</div>
+		<div class="fgx"></div>
+		<div id="code">
+			<a href="javascript:;" target="_self" title="" class="del" onclick="del(this)">不显示二维码</a>
+		<p>二维码参数</p>
+		<input type="text" placeholder="二维码大小" value="" class="size" name="">
+		<input type="text" placeholder="左边距离" value="" class="left" name="">
+		<input type="text" placeholder="顶部距离" value="" class="top" name="">
+		<input type="text" placeholder="边框颜色" value="" class="code" name="">
+		</div>
+		<div class="fgx"></div>
+		<div class="txt">
+		<a href="javascript:;" target="_self" title="" class="del" onclick="del(this)">不显示文案</a>
+		<p>文案参数</p><button onclick="clone()">++++</button>
+		<input type="text" placeholder="左边距离" value="" class="left" name="">
+		<input type="text" placeholder="顶部距离" value="" class="top" name="">
+		<input type="text" placeholder="文字颜色" value="" class="cr" name="">
+		<input type="text" placeholder="字体大小" value="" class="ft" name="">
+		<input type="text" placeholder="文案" class="wa" name="" value="">
+		</div>
+	</div>
+	<div class="fgx"></div>
+	<!--  -->
+	<button onclick="getVal()" id="gg" style="font-size:28px;">生成URL</button>
+	<a href="" target="_blank" id="link" style="color: #f00;font-weight: bold;font-size: 18px;">pc预览链接</a>
+	<p>生成的url</p>
+	<textarea id="textarea"></textarea>
+	二维码预览
+	<div id="sadfsadfsa"></div>
+	<div class="fgx"></div>
+	<p>修改链接参数;删除salesId=386&</p>
+	<img src="images/20180829_2.png">
+	<div class="fgx"></div>
+	<p>修改链接参数;modlueName=modlue99999;修改99999---成为所需要类型</p>
+	<img src="images/20180829_3.png">
+<script src="//js.3conline.com/min/temp/v1/lib-jquery1.10.2.js"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/aides/js/qrcode.js"></script>
+<script type="text/javascript">
+function getVal(){
+	// head头像
+	let headText="";
+	if ($("#head")[0]) {
+		let headSize=$("#head .size").val(),
+			headLeft=$("#head .left").val(),
+			headTop=$("#head .top").val(),
+			headCode=$("#head .code").val();
+		headText='head={size:'+headSize+',x:'+headLeft+',y:'+headTop+',bc:"'+headCode+'"}'
+	}
+	
+	// bg背景
+	let bgName=$("#bg .name").val(),
+		bgH=$("#bg .h").val();
+	// 二维码
+	let codeText="";
+	if ($("#code")[0]) {
+		let codeSize=$("#code .size").val(),
+			codeLeft=$("#code .left").val(),
+			codeTop=$("#code .top").val(),
+			codeCode=$("#code .code").val();
+		codeText='code={size:'+codeSize+',x:'+codeLeft+',y:'+codeTop+',bc:"'+codeCode+'"}'
+	}
+	
+
+	let t="text=[";
+	$(".txt").each(function(i,m){
+		let that=$(this)
+		t+='{x:'+that.find(".left").val()+',y:'+that.find(".top").val()+',ft:'+that.find(".ft").val()+',cr:"'+that.find(".cr").val()+'",txt:"'+encodeURI(that.find(".wa").val())+'"},';
+	})
+	t+="]";
+	console.log(t)
+	let url=`https://www1.pcauto.com.cn/wap/pocket/20170516poster/index.html?salesId=386&fromApp=1&modlueName=modlue99999&${headText}&urlPoster=1&bgName={name:"${bgName}",h:${bgH}}&${codeText}&${t}`;
+	url=encodeURI(url)
+	console.log(url)
+	document.getElementById("sadfsadfsa").innerHTML=null;
+	new QRCode(document.getElementById("sadfsadfsa"),url);
+	$("#textarea").html(url)
+	$("#link").attr("href",url)
+}
+function clone(){
+	// $.clone
+	$(".doc").append($(".txt").eq(0).clone());
+}
+function del(obj){
+	$(obj).parent().remove();
+}
+</script>
+</body>
+</html>

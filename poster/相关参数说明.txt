@@ -1,0 +1,44 @@
+<!--
+app相关：
+1.海报中的功能(除选车系、选照片)都在HTML中完成
+2.海报不需要有导航栏，但导航及分享工具栏以外的都需要有
+3.海报生成图片完成需要调用协议 pcautoaction://generate_posters
+4.海报需要提供JS函数，调用后返回图片的base64字符串
+5.提供协议pcautoaction://choose-car/经销商id
+6.提供JS函数，调用时把选中的车系传给HTML
+7.提供协议pcautoaction://choose-photo/
+8.提供JS函数，调用时把选中的图片的base64传给HTML
+// filePicLoad();//传入图片url base64
+// m.boxSave();//生成图片
+// m.getPhotoBase64();//获取图片url base64
+// m.getAppSeriesData(data);//车系选择回调函数
+ -->
+www1.pcauto.com.cn/zt/pocket/font/
+<!-- 模板选择 -->
+<!--
+data-modlueName:参数说明
+modlue103:模板编号-用于调整样式以及提交计数
+saveNone：无需上传图片
+saleLogo:logo
+series：车系弹窗 whitecarpic:车系白底图-默认实拍图
+chat:对话 - chat.js填写对话内容
+scale3:图片放大倍数-防止图片模糊
+jumpLink:跳转链接
+data-AppointModlue:需要显示的id，多个用,分隔，默认：manufacturerIds;data-AppointModlue-type="brandIds"：品牌
+data-font:所需字体
+字体：
+FZY4JW:方正粗圆
+FZY3JW:方正准圆简体
+FZZYJW:方正综艺简体
+shaoer:少儿
+HYA5GJM_0:汉仪长宋简
+hyk2gjm:汉仪菱心体简
+hyb2gjm:汉仪大黑简
+FZYTJW_0:姚体
+FZKATJW:卡通简体
+FZCYSK_0:粗雅宋
+FZCSJW:粗宋体
+ydyst：杨任东竹石体
+series-imgCrop:车系图片，带裁剪框
+newCarPrev:新车海报添加位置
+ -->

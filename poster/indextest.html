@@ -1,0 +1,2094 @@
+
+
+
+
+
+
+
+<!doctype HTML>
+<html>
+<head>
+<title>一键海报</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no"/>
+<meta content="telemobile=no" name="format-detection" />
+<meta name="author" content="zhangjinyong_gz chenwanjun_gz" />
+<meta name="keywords" content="一键海报">
+<meta name="description" content="一键海报">
+<script type="text/javascript">
+(function(f,j){var i=document,d=window;var b=i.documentElement;var c;var h=i.querySelector('meta[name="viewport"]');var e="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no";if(h){h.setAttribute("content",e)}else{h=i.createElement("meta");h.setAttribute("name","viewport");h.setAttribute("content",e);if(b.firstElementChild){b.firstElementChild.appendChild(h)}else{var a=i.createElement("div");a.appendChild(h);i.write(a.innerHTML)}}function g(){var k=b.getBoundingClientRect().width;if(!j){j=540}if(k>j){k=j}var l=k*100/f;b.style.fontSize=l+"px"}g();d.addEventListener("resize",function(){clearTimeout(c);c=setTimeout(g,300)},false);d.addEventListener("pageshow",function(k){if(k.persisted){clearTimeout(c);c=setTimeout(g,300)}},false);if(i.readyState==="complete"){i.body.style.fontSize="16px"}else{i.addEventListener("DOMContentLoaded",function(k){i.body.style.fontSize="16px"},false)}})(750,750);
+</script>
+<link rel="stylesheet" type="text/css" href="css/main.css?t=10">
+</head>
+<body>
+<!-- //www1.pcauto.com.cn/wap/pocket/20170516poster/index.html?salesId=386 -->
+<!--计数器-->
+<script>
+window._common_counter_code_ = "channel=9343";
+window._common_counter_uuid_ = "";
+window._common_counter_from_ = "cms";
+document.write("<img style=display:none src=//count.pcauto.com.cn/count.php?"+_common_counter_uuid_+_common_counter_code_+"&screen="+screen.width+"*"+screen.height+"&refer="+encodeURIComponent(document.referrer)+"&anticache="+new Date().getTime()+"&url="+encodeURIComponent(location.href)+"&from="+(window._common_counter_from_?window._common_counter_from_:"")+"&iframeCode="+(self===top?0:(top===parent?1:2))+" >");
+</script>
+<!-- loading -->
+<div id="loading" class="loading">
+  <div class="lds-css ng-scope">
+    <div class="lds-spinner" style="height:100%"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+  <div class="load-txt">玩命加载中....</div>
+</div>
+<!-- loading end -->
+<div class="outputPic-con">
+  <img id="outputPic-con" src="" alt="">
+</div>
+<!--  -->
+<div class="auto-poster" id="auto-poster"></div>
+<!-- 图片裁剪框 - 合成区域 -->
+<div class="g-doc" id="g-doc">
+  <div class="uploadPic-con" id="uploadPic-con">
+    <div class="cover-pic"></div>
+    <div class="file-btn" id="file-btn">
+      <input type="file" class="file" id="file" accept="image/*" name="">
+      <a href="pcautoaction://choose-photo/" target="_self" title="" class="app-file-btn" id="app-file-btn"></a>
+    </div>
+    <div class="file-imgbg" id="file-imgbg"></div>
+    <div class="imgCrop" id="imgCrop"></div>
+    <div class="lazy_tip" id="lazy_tip"></div>
+    <i class="icon icon1"></i>
+    <i class="icon icon2"></i>
+    <i class="icon icon3"></i>
+    <i class="icon icon4"></i>
+    <i class="icon icon5"></i>
+    <i class="icon icon6"></i>
+    <i class="icon icon7"></i>
+    <div class="sale-head">
+      <img class="sale-head-img" src="">
+      <img class="sale-sex" src="">
+    </div>
+    <div class="zd-txt none"></div>
+    <div class="zd-txt2 none"></div>
+    <div class="zd-txt3 none"></div>
+    <div class="zd-txt4 none"></div>
+    <div class="zd-txt5 none"></div>
+    <div class="zd-txt6 none"></div>
+    <div class="zd-txt7 none"></div>
+    <div class="sale-info-txt sale-name"></div>
+    <div class="sale-info-txt dealerName"></div>
+    <div class="sale-info-txt sale-dealerAddress"></div>
+    <!-- 二维码上传控件 -->
+    <div class="sale-code-con">
+      <div id="qrcode" class="sale-code-img"></div>
+    </div>
+    <!-- 对话 -->
+    <p class="ly-name none">
+      <i></i>
+      助你一臂之力
+    </p>
+    <div class="dw-txt none">
+      <p>好吧，我实在编不下去了</p>
+      <p>上面都是我瞎说的，我只想好好卖车</p>
+      <p class="dw-dm"></p>
+      <p class="dw-xm"></p>
+      <p>~~</p>
+      <p>赶紧来找我买车啊!!</p>
+    </div>
+    <!-- 品牌logo -->
+    <div class="sale-logo none">
+      <img src="">
+    </div>
+    <!-- 对话 -->
+    <div class="wx-chat">
+      <img src="" id="chat-wxhead-by">
+      <p class="wx-chat-top-date"></p>
+      <p class="wx-chat-tit"></p>
+      <div class="chat-con"></div>
+      <img src="" id="chat-wxfooter">
+    </div>
+    <div class="box-input none"></div>
+    <!-- 对话 -->
+    <div class="dh none">
+      <img src="" alt="" class="dh-head dh-head1">
+      <img src="" alt="" class="dh-head dh-head2">
+      <img src="" alt="" class="dh-head dh-head3">
+      <img src="" alt="" class="dh-head dh-head4">
+      <img src="" alt="" class="dh-head dh-head5">
+      <img src="" alt="" class="dh-head dh-head6">
+      <img src="" alt="" class="dh-head dh-head8">
+      <p class="dh-name dh-name1"></p>
+      <p class="dh-name dh-name2"></p>
+      <p class="dh-name dh-name3"></p>
+      <p class="dh-name dh-name4"></p>
+      <p class="dh-name dh-name5"></p>
+      <p class="dh-name dh-name6"></p>
+      <div class="dh-texts">
+        <p class="dh-txt"></p>
+      </div>
+      <div class="dh-code">
+        <p class="dh-name dh-name8"></p>
+        <img src="" alt="" class="dh-head dh-head7">
+        <img src="" class="dh-bg2">
+      </div>
+    </div>
+    <div class="series-pic none">
+      <img src="">
+    </div>
+    <div class="series-pic2 none">
+      <img src="">
+    </div>
+    <p class="series-name none">赶紧来找我买车啊</p>
+    <!--  -->
+    <!-- 文本输入框 -->
+    <textarea placeholder="请输入内容(30个字符内)" class="none textarea" id="textarea"></textarea>
+    <input type="text" size="16" id="input" placeholder="请输入内容" class="none areaInput input" name="">
+    <input type="text" class="none areaInput input2" id="input2" name="">
+    <input type="text" class="none areaInput input3" placeholder="请输入内容" id="input3" name="">
+    <p contenteditable="true" class="contenteditable contenteditable1"></p>
+    <p contenteditable="true" class="contenteditable contenteditable2"></p>
+    <p contenteditable="true" class="contenteditable contenteditable3"></p>
+    <div class="tip-mask">
+      <a href="javascript:;" target="_self" class="tip-mask-close-btn"></a>
+      <i class="tip-icon tip-icon1"></i>
+      <i class="tip-icon tip-icon2"></i>
+      <i class="tip-icon tip-icon3"></i>
+    </div>
+  </div>
+</div>
+<!-- 模板选择 -->
+<div class="modlue-type" id="modlue-type">
+  <div class="modlue-select" data-modlueName="modlue473 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue473x.jpg">
+    <span class="modlue-type-name">CS55解读港珠澳大桥</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue472 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue472x.jpg">
+    <span class="modlue-type-name">天气凉了有CS55</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue471 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue471x.jpg">
+    <span class="modlue-type-name">冬日暖男CS55</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue470 saveNone" data-AppointModlue="2">
+    <img data-original="images/modlue470x.jpg">
+    <span class="modlue-type-name">探岳新车速读</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue469 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue469x.jpg">
+    <span class="modlue-type-name">哈弗霜降海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue468 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue468x.jpg">
+    <span class="modlue-type-name">天气冷了买辆车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue467 saveNone">
+    <img data-original="images/modlue128x.jpg">
+    <span class="modlue-type-name">万圣节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue466 saveNone" data-AppointModlue="7402">
+    <img data-original="images/modlue466x.jpg">
+    <span class="modlue-type-name">油价上涨提醒</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue465 saveNone" data-AppointModlue="7402">
+    <img data-original="images/modlue465x.jpg">
+    <span class="modlue-type-name">领克03新车上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue464 saveNone" data-AppointModlue="7402">
+    <img data-original="images/modlue464x.jpg">
+    <span class="modlue-type-name">领克03</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue463 saveNone" data-AppointModlue="7402">
+    <img data-original="images/modlue463x.jpg">
+    <span class="modlue-type-name">领克03上市直播</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue462 saveNone" >
+    <img data-original="images/modlue462x.jpg">
+    <span class="modlue-type-name">买车找我歌词海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue461 saveNone" data-AppointModlue="4">
+    <img data-original="images/modlue461x.jpg">
+    <span class="modlue-type-name">GLC L 正式上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue460 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue460x.jpg">
+    <span class="modlue-type-name">哈弗F5引领潮流</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue459 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue459x.jpg">
+    <span class="modlue-type-name">长安抖音网红招募</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue458 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue458x.jpg">
+    <span class="modlue-type-name">长安官宣创意</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue457 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue457x.jpg">
+    <span class="modlue-type-name">哈弗有礼</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue456 saveNone saleLogo">
+    <img data-original="images/modlue456x.jpg">
+    <span class="modlue-type-name">冯绍峰/赵丽颖热点</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue455 saveNone">
+    <img data-original="images/modlue455x.jpg">
+    <span class="modlue-type-name">高速跟车技巧</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue454 saveNone">
+    <img data-original="images/modlue454x.jpg">
+    <span class="modlue-type-name">停车被堵怎么办</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue453 saveNone">
+    <img data-original="images/modlue453x.jpg">
+    <span class="modlue-type-name">业绩告急</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue452 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue452x.jpg">
+    <span class="modlue-type-name">车辆年检</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue451 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue451x.jpg">
+    <span class="modlue-type-name">雾天行车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue450 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue450x.jpg">
+    <span class="modlue-type-name">哈弗神车降两万</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue449 saveNone" data-AppointModlue="3">
+    <img data-original="images/modlue449x.jpg">
+    <span class="modlue-type-name">这！就是雅阁</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue448 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue448x.jpg">
+    <span class="modlue-type-name">哈弗F5自由派</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue447 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue447x.jpg">
+    <span class="modlue-type-name">哈弗F5潮流派</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue446 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue446x.jpg">
+    <span class="modlue-type-name">哈弗F5行动派</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue445 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue445x.jpg">
+    <span class="modlue-type-name">哈弗F5智能派</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue444 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue444x.jpg">
+    <span class="modlue-type-name">哈弗阿拉善英雄会</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue443 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue443x.jpg">
+    <span class="modlue-type-name">哈弗F5生存法则</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue442 saveNone m18930" data-AppointModlue="932">
+    <img data-original="images/modlue442x.jpg">
+    <span class="modlue-type-name">见证哈弗品质</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue441 saveNone">
+    <img data-original="images/modlue441x.jpg">
+    <span class="modlue-type-name">为祖国庆生</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue440 saveNone">
+    <img data-original="images/modlue440x.jpg">
+    <span class="modlue-type-name">国庆节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue439 saveNone"  data-font="kuzhan">
+    <img data-original="images/modlue439x.jpg">
+    <span class="modlue-type-name">国庆节来订车啊</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue438 saveNone input tipmask">
+    <img data-original="images/modlue65x.jpg">
+    <span class="modlue-type-name">车展</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue437 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue437x.jpg">
+    <span class="modlue-type-name">睿骋CC五星品质</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue436 saveNone">
+    <img data-original="images/modlue436x.jpg">
+    <span class="modlue-type-name">长途出行安全检查</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue435 saveNone">
+    <img data-original="images/modlue435x.jpg">
+    <span class="modlue-type-name">长途驾驶安全驾驶</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue434 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue434x.jpg">
+    <span class="modlue-type-name">睿骋CC碰撞五星</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue433 saveNone nhf0928" data-AppointModlue="932">
+    <img data-original="images/modlue433x.jpg">
+    <span class="modlue-type-name">哈弗之星-试驾专员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue432 saveNone nhf0928" data-AppointModlue="932">
+    <img data-original="images/modlue432x.jpg">
+    <span class="modlue-type-name">哈弗之星-客服人员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue431 saveNone nhf0928" data-AppointModlue="932">
+    <img data-original="images/modlue431x.jpg">
+    <span class="modlue-type-name">哈弗之星-市场专员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue430 saveNone nhf0928" data-AppointModlue="932">
+    <img data-original="images/modlue430x.jpg">
+    <span class="modlue-type-name">哈弗之星-销售专员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue429 saveNone hf0928" data-AppointModlue="932">
+    <img data-original="images/modlue429x.jpg">
+    <span class="modlue-type-name">哈弗之星-电销专员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue428 saveNone hf0928" data-AppointModlue="932">
+    <img data-original="images/modlue428x.jpg">
+    <span class="modlue-type-name">哈弗之星-市场专员二</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue427 saveNone hf0928" data-AppointModlue="932">
+    <img data-original="images/modlue427x.jpg">
+    <span class="modlue-type-name">哈弗之星-销售专员二</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue426 saveNone hf0928" data-AppointModlue="932">
+    <img data-original="images/modlue426x.jpg">
+    <span class="modlue-type-name">哈弗之星-售后人员</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue425 saveNone" data-AppointModlue="3">
+    <img data-original="images/modlue425x.jpg">
+    <span class="modlue-type-name">凌派</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue424 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue424x.jpg">
+    <span class="modlue-type-name">见证长安品质</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue423 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue423x.jpg">
+    <span class="modlue-type-name">CS55获奖海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue422 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue422x.jpg">
+    <span class="modlue-type-name">睿骋CC</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue421 saveNone" data-AppointModlue="15">
+    <img data-original="images/modlue421x.jpg">
+    <span class="modlue-type-name">轩逸纯电上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue420 saveNone">
+    <img data-original="images/modlue420x.jpg">
+    <span class="modlue-type-name">中秋节来看车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue419 saveNone">
+    <img data-original="images/modlue419x.jpg">
+    <span class="modlue-type-name">遇到窄路通过技巧</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue418 saveNone" data-AppointModlue="107">
+    <img data-original="images/modlue418x.jpg">
+    <span class="modlue-type-name">秦Pro</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue417 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue417x.jpg">
+    <span class="modlue-type-name">逸动高能版</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue416 saveNone" data-AppointModlue="6">
+    <img data-original="images/modlue416x.jpg">
+    <span class="modlue-type-name">云逸</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue415 saveNone">
+    <img data-original="images/modlue415x.jpg">
+    <span class="modlue-type-name">打蜡注意事项</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue414 saveNone">
+    <img data-original="images/modlue414x.jpg">
+    <span class="modlue-type-name">磨合期驾车注意 </span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue413 saveNone">
+    <img data-original="images/modlue413x.jpg">
+    <span class="modlue-type-name">女生驾车技巧</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue412 saveNone series whitecarpic carModlue" data-font="FZCYSK">
+    <img data-original="images/modlue412x.jpg">
+    <span class="modlue-type-name">高端风格营销海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue411 saveNone">
+    <img data-original="images/modlue411x.jpg">
+    <span class="modlue-type-name">金九银十</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue410 saveNone">
+    <img data-original="images/modlue410x.jpg">
+    <span class="modlue-type-name">宝宝坐车安全指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue409 saveNone">
+    <img data-original="images/modlue409x.jpg">
+    <span class="modlue-type-name">iPhone新品热点海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue408 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue408x.jpg">
+    <span class="modlue-type-name">新CS55上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue407 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue407x.jpg">
+    <span class="modlue-type-name">长安汽车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue406 saveNone">
+    <img data-original="images/modlue406x.jpg">
+    <span class="modlue-type-name">暴雨开车应对指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue405 saveNone">
+    <img data-original="images/modlue405x.jpg">
+    <span class="modlue-type-name">遭遇碰瓷处理办法</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue404 saveNone series carModlue" data-font="FZBYSK_0">
+    <img data-original="images/modlue404x.jpg">
+    <span class="modlue-type-name">教师节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue403 saveNone">
+    <img data-original="images/modlue403x.jpg">
+    <span class="modlue-type-name">路遇大货车保命指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue402 saveNone">
+    <img data-original="images/modlue402x.jpg">
+    <span class="modlue-type-name">孕妇驾车注意</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue401 saveNone" data-AppointModlue="7422">
+    <img data-original="images/modlue401x.jpg">
+    <span class="modlue-type-name">WEY来之星</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue400 saveNone" data-AppointModlue="7422">
+    <img data-original="images/modlue400x.jpg">
+    <span class="modlue-type-name">WEY-抗战胜利纪念</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue399 saveNone cz0830" data-AppointModlue="12">
+    <img data-original="images/modlue399x.jpg">
+    <span class="modlue-type-name">KX3上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue398 saveNone cz0830" data-AppointModlue="12">
+    <img data-original="images/modlue398x.jpg">
+    <span class="modlue-type-name">K5插电混动</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue397 saveNone cz0830" data-AppointModlue="57">
+    <img data-original="images/modlue397x.jpg">
+    <span class="modlue-type-name">艾瑞泽GX</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue396 saveNone cz0830" data-AppointModlue="76">
+    <img data-original="images/modlue396x.jpg">
+    <span class="modlue-type-name">新一代福克斯</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue395 saveNone cz0830" data-AppointModlue="335">
+    <img data-original="images/modlue395x.jpg">
+    <span class="modlue-type-name">IX4</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue394 saveNone cz0830" data-AppointModlue="345">
+    <img data-original="images/modlue394x.jpg">
+    <span class="modlue-type-name">名爵HS上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue393 saveNone cz0830" data-AppointModlue="107">
+    <img data-original="images/modlue393x.jpg">
+    <span class="modlue-type-name">全新一代比亚迪宋</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue392 saveNone cz0830" data-AppointModlue="13">
+    <img data-original="images/modlue392x.jpg">
+    <span class="modlue-type-name">吉利缤瑞上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue391 saveNone cz0830" data-AppointModlue="365">
+    <img data-original="images/modlue391x.jpg">
+    <span class="modlue-type-name">荣威Marvel X上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue390 saveNone" data-AppointModlue="7422">
+    <img data-original="images/modlue390x.jpg">
+    <span class="modlue-type-name">VV6车展海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue389 saveNone cz0830" data-AppointModlue="345">
+    <img data-original="images/modlue389x.jpg">
+    <span class="modlue-type-name">名爵HS</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue388 saveNone cz0830" data-AppointModlue="13">
+    <img data-original="images/modlue388x.jpg">
+    <span class="modlue-type-name">吉利缤瑞</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue387 saveNone cz0830" data-AppointModlue="811">
+    <img data-original="images/modlue387x.png">
+    <span class="modlue-type-name">三菱奕歌</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue386 saveNone cz0830" data-AppointModlue="3">
+    <img data-original="images/modlue386x.png">
+    <span class="modlue-type-name">雅阁锐·混动</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue385 saveNone cz0830" data-AppointModlue="7402">
+    <img data-original="images/modlue385x.png">
+    <span class="modlue-type-name">领克03</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue384 saveNone" data-AppointModlue="1">
+    <img data-original="images/modlue384x.jpg">
+    <span class="modlue-type-name">Q2L潮酷来袭</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue383 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue383x.png">
+    <span class="modlue-type-name">逸动XT正式上市</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue382 saveNone" data-AppointModlue="308">
+    <img data-original="images/modlue382x.jpg">
+    <span class="modlue-type-name">凯迪拉克XT4</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue381 saveNone" data-AppointModlue="365">
+    <img data-original="images/modlue381x.png">
+    <span class="modlue-type-name">MARVEL X 上市倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="urlposter saveNone" style="width: 0px;height: 0;">
+    <img data-original="">
+    <span class="modlue-type-name">一键海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue380 saveNone" data-AppointModlue="145">
+    <img data-original="images/modlue380x.png">
+    <span class="modlue-type-name">标致408上市海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue379 saveNone" data-AppointModlue="1046">
+    <img data-original="images/modlue379x.jpg">
+    <span class="modlue-type-name">EC3</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue378 saveNone" data-AppointModlue="335">
+    <img data-original="images/modlue378x.jpg">
+    <span class="modlue-type-name">广汽ix4</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue377 saveNone" data-AppointModlue="76">
+    <img data-original="images/modlue377x.jpg">
+    <span class="modlue-type-name">福克斯发布倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue376 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue376x.png">
+    <span class="modlue-type-name">逸动XT上市直播开启</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue375 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue375x.jpg">
+    <span class="modlue-type-name">逸动XT上市海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue374 saveNone" data-AppointModlue="15">
+    <img data-original="images/modlue374x.jpg">
+    <span class="modlue-type-name">东风日产新征程</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue373 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue373x.jpg">
+    <span class="modlue-type-name">逸动XT上市倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue370 saveNone" data-AppointModlue="7422">
+    <img data-original="images/modlue370x.jpg">
+    <span class="modlue-type-name">VV6 上市倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue372 saveNone">
+    <img data-original="images/modlue372x.jpg">
+    <span class="modlue-type-name">夜间安全行车指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue371 saveNone" data-AppointModlue="124">
+    <img data-original="images/modlue371x.jpg">
+    <span class="modlue-type-name">长安专属挑战赛</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue369 saveNone">
+    <img data-original="images/modlue369x.jpg">
+    <span class="modlue-type-name">肇事逃逸应对指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue368 saveNone">
+    <img data-original="images/modlue368x.jpg">
+    <span class="modlue-type-name">七夕一起过节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue367 saveNone">
+    <img data-original="images/modlue367x.jpg">
+    <span class="modlue-type-name">今天要加油鸭</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue366 saveNone">
+    <img data-original="images/modlue366x.jpg">
+    <span class="modlue-type-name">夏季空调使用指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue365 saveNone">
+    <img data-original="images/modlue365x.jpg">
+    <span class="modlue-type-name">我就是王牌销售</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue364 saveNone series" data-font="FZZYJW">
+    <img data-original="images/modlue364x_01.jpg">
+    <span class="modlue-type-name">买车视力表</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue363 saveNone" data-font="HYA5GJM_0">
+    <img data-original="images/modlue363x.jpg">
+    <span class="modlue-type-name">月底急需开单</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue362 saveNone">
+    <img data-original="images/modlue362x.jpg">
+    <span class="modlue-type-name">台风天气行车指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue361 saveNone series">
+    <img data-original="images/modlue361x.jpg">
+    <span class="modlue-type-name">生活不易</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue360 saveNone">
+    <img data-original="images/modlue360x.jpg">
+    <span class="modlue-type-name">洗车注意事项</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue359 saveNone">
+    <img data-original="images/modlue359x.jpg">
+    <span class="modlue-type-name">今晚吃鸡</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue358 saveNone series" data-font="hyk1gjm">
+    <img data-original="images/modlue358x.jpg">
+    <span class="modlue-type-name">天气那么热</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue357 saveNone">
+    <img data-original="images/modlue357x.jpg">
+    <span class="modlue-type-name">夏季用车贴士</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue356 saveNone carsKing" data-AppointModlue="845,110">
+    <img data-original="images/modlue356x.jpg">
+    <span class="modlue-type-name">长城王者战报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue355 saveNone" data-AppointModlue="57">
+    <img data-original="images/modlue355x.jpg">
+    <span class="modlue-type-name">奇瑞王者战报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue354 saveNone" data-AppointModlue="7422">
+    <img data-original="images/modlue354x.jpg">
+    <span class="modlue-type-name">C罗-WEY胜利而来</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue353 saveNone">
+    <img data-original="images/modlue353x.jpg">
+    <span class="modlue-type-name">618来放zong</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue352 saveNone" data-AppointModlue="17">
+    <img data-original="images/modlue352x.jpg">
+    <span class="modlue-type-name">阿特兹科技限量版</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue351 saveNone series">
+    <img data-original="images/modlue351x.jpg">
+    <span class="modlue-type-name">父亲节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue350 saveNone series" data-font="hyb2gjm">
+    <img data-original="images/modlue350x.jpg">
+    <span class="modlue-type-name">2018世界杯</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue349 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue349x.jpg">
+    <span class="modlue-type-name">哈弗专属倒计时1</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue348 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue348x.jpg">
+    <span class="modlue-type-name">哈弗专属倒计时2</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue347 saveNone" data-AppointModlue="932">
+    <img data-original="images/modlue347x.jpg">
+    <span class="modlue-type-name">哈弗专属倒计时3</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue346 saveNone">
+    <img data-original="images/modlue346x.jpg">
+    <span class="modlue-type-name">涉水驾驶提醒</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue345 saveNone" data-font="FZY4JW">
+    <img data-original="images/modlue345x.jpg">
+    <span class="modlue-type-name">给你的情书</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue344 saveNone series" data-font="ydyst">
+    <img data-original="images/modlue344x.jpg">
+    <span class="modlue-type-name">2018高考作文</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue343 saveNone">
+    <img data-original="images/modlue343x.jpg">
+    <span class="modlue-type-name">世界杯知识点</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue342 saveNone" data-AppointModlue="17">
+    <img data-original="images/modlue342x.jpg">
+    <span class="modlue-type-name">2018款CX-4</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue341 saveNone" data-font="HYA5GJM_0">
+    <img data-original="images/modlue341x.jpg">
+    <span class="modlue-type-name">高考温馨提示</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue340 series whitecarpic saveNone">
+    <img data-original="images/modlue340x.jpg">
+    <span class="modlue-type-name">购车足迹</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue339 saveNone" data-AppointModlue="17">
+    <img data-original="images/modlue339x.jpg">
+    <span class="modlue-type-name">2018款阿特兹</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue337 saveNone series serType input appCover" data-exhibition="exhibition">
+    <img data-original="images/modlue337x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue338 saveNone" data-hafo="ss">
+    <img data-original="images/modlue338x.jpg">
+    <span class="modlue-type-name">哈弗E战到底</span>
+  </div>
+  
+  <div class="modlue-select" data-modlueName="modlue336 saveNone series" data-font="FZY3JW">
+    <img data-original="images/modlue336x.jpg">
+    <span class="modlue-type-name">六一儿童节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue335 saveNone">
+    <img data-original="images/modlue335x.jpg">
+    <span class="modlue-type-name">夏季保养</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1067,28" data-modlueName="modlue334 saveNone">
+    <img data-original="images/modlue334x.jpg">
+    <span class="modlue-type-name">英菲尼迪官方降价</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="19" data-modlueName="modlue333 saveNone">
+    <img data-original="images/modlue333x.jpg">
+    <span class="modlue-type-name">奔驰官方降价</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="21" data-modlueName="modlue332 saveNone">
+    <img data-original="images/modlue332x_01.jpg">
+    <span class="modlue-type-name">福特官方降价</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="17" data-modlueName="modlue324 saveNone">
+    <img data-original="images/modlue324x.jpg">
+    <span class="modlue-type-name">CX-4</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue331 saveNone">
+    <img data-original="images/modlue331x.jpg">
+    <span class="modlue-type-name">月底冲量</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue330 saveNone" data-font="ydyst,ysytsem">
+    <img data-original="images/modlue330x.png">
+    <span class="modlue-type-name">销售日记</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="10" data-modlueName="modlue329 saveNone">
+    <img data-original="images/modlue329x.jpg">
+    <span class="modlue-type-name">表白520</span>
+  </div>
+   
+  <div class="modlue-select" data-modlueName="modlue328 saveNone series saleLogo" data-font="hyk1gjm">
+    <img data-original="images/modlue328x.jpg">
+    <span class="modlue-type-name">复仇者联盟</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue327 saveNone">
+    <img data-original="images/modlue327x.jpg">
+    <span class="modlue-type-name">520</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue326 saveNone">
+    <img data-original="images/modlue326x.jpg">
+    <span class="modlue-type-name">不爱我就拉倒</span>
+  </div>
+ <div class="modlue-select" data-AppointModlue="17" data-modlueName="modlue325 saveNone">
+    <img data-original="images/modlue325x.jpg">
+    <span class="modlue-type-name">阿特兹</span>
+  </div>
+  
+  <div class="modlue-select" data-modlueName="modlue323 saveNone series">
+    <img data-original="images/modlue323x.jpg">
+    <span class="modlue-type-name">母亲节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue322 saveNone series" data-font="HYA5GJM_0">
+    <img data-original="images/modlue322x.jpg">
+    <span class="modlue-type-name">后来的我们</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue321 saveNone" data-font="FZCSJW">
+    <img data-original="images/modlue321x.jpg">
+    <span class="modlue-type-name">卖车宣传单</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue320 saveNone">
+    <img data-original="images/modlue320x.jpg">
+    <span class="modlue-type-name">五四·致青春</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue319 saveNone series">
+    <img data-original="images/modlue319x.jpg">
+    <span class="modlue-type-name">五四青年节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue318 saveNone">
+    <img data-original="images/modlue318x.jpg">
+    <span class="modlue-type-name">劳动节</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1341" data-modlueName="modlue317 bjcz0425 saveNone">
+    <img data-original="images/modlue317x.jpg">
+    <span class="modlue-type-name">全新RDX</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="570" data-modlueName="modlue316 bjcz0425 saveNone">
+    <img data-original="images/modlue316x.jpg">
+    <span class="modlue-type-name">传祺GM6</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="355,10" data-modlueName="modlue315 bjcz0425 saveNone">
+    <img data-original="images/modlue315x.jpg">
+    <span class="modlue-type-name">奕泽、CHR</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="12" data-modlueName="modlue314 bjcz0425 saveNone">
+    <img data-original="images/modlue314x.jpg">
+    <span class="modlue-type-name">起亚奕跑</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="107" data-modlueName="modlue313 bjcz0425 saveNone">
+    <img data-original="images/modlue313x.jpg">
+    <span class="modlue-type-name">比亚迪唐</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="365" data-modlueName="modlue312 bjcz0425 saveNone">
+    <img data-original="images/modlue312x.jpg">
+    <span class="modlue-type-name">荣威厂商</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="7422" data-modlueName="modlue311 bjcz0425 saveNone">
+    <img data-original="images/modlue311x.jpg">
+    <span class="modlue-type-name">长城WEY</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="30" data-modlueName="modlue310 bjcz0425 saveNone">
+    <img data-original="images/modlue310x.jpg">
+    <span class="modlue-type-name">雷克萨斯ES</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="57" data-modlueName="modlue309 bjcz0425 saveNone">
+    <img data-original="images/modlue309x.jpg">
+    <span class="modlue-type-name">瑞虎8</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="579" data-modlueName="modlue308 bjcz0425 saveNone">
+    <img data-original="images/modlue308x.jpg">
+    <span class="modlue-type-name">宝骏360</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="26" data-modlueName="modlue307 bjcz0425 saveNone">
+    <img data-original="images/modlue307x.jpg">
+    <span class="modlue-type-name">捷豹I-PACE</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue306 bjcz0425 saveNone">
+    <img data-original="images/modlue306x.jpg">
+    <span class="modlue-type-name">CS75</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="396" data-modlueName="modlue305 bjcz0425 saveNone">
+    <img data-original="images/modlue305x.jpg">
+    <span class="modlue-type-name">红旗H5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="579" data-modlueName="modlue304 bjcz0425 saveNone">
+    <img data-original="images/modlue304x.jpg">
+    <span class="modlue-type-name">宝骏310W</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue303 saleLogo saveNone">
+    <img data-original="images/modlue303x.jpg">
+    <span class="modlue-type-name">雨季行车安全</span>
+  </div>
+  <div class="modlue-select" data-font="zwxt" data-modlueName="modlue302 saleLogo saveNone">
+    <img data-original="images/modlue302x.jpg">
+    <span class="modlue-type-name">开单神符</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue301 saveNone series">
+    <img data-original="images/modlue301x.jpg">
+    <span class="modlue-type-name">头号玩家</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer" data-modlueName="modlue300 saveNone series whitecarpic">
+    <img data-original="images/modlue300x.jpg">
+    <span class="modlue-type-name">小猪佩奇</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue299 saveNone series">
+    <img data-original="images/modlue299x.jpg">
+    <span class="modlue-type-name">清明节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue298 saveNone">
+    <img data-original="images/modlue298x.jpg">
+    <span class="modlue-type-name">愚人节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue297 saveNone input">
+    <img data-original="images/modlue297x.jpg">
+    <span class="modlue-type-name">团购活动</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue296 saveNone">
+    <img data-original="images/modlue296x.jpg">
+    <span class="modlue-type-name">张继科热点</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue295 series series-imgCrop">
+    <img data-original="images/modlue295x.jpg">
+    <span class="modlue-type-name">这,就是好车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue294 series series-imgCrop">
+    <img data-original="images/modlue294x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue293 saveNone">
+    <img data-original="images/modlue293x.jpg">
+    <span class="modlue-type-name">为诚信代言</span>
+  </div>
+  <div class="modlue-select newCarPrev" data-modlueName="modlue292 saveNone">
+    <img data-original="images/modlue292x.jpg">
+    <span class="modlue-type-name">女神万岁</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue291">
+    <img data-original="images/modlue291x.jpg">
+    <span class="modlue-type-name">三月女神一</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue290">
+    <img data-original="images/modlue290x.jpg">
+    <span class="modlue-type-name">三月女神二</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue289">
+    <img data-original="images/modlue289x.jpg">
+    <span class="modlue-type-name">三月女神三</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue288 saveNone">
+    <img data-original="images/modlue288x.jpg">
+    <span class="modlue-type-name">贺元宵</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue270 saleLogo series whitecarpic series-imgCrop">
+    <img data-original="images/modlue270x.jpg">
+    <span class="modlue-type-name">青蛙の旅行</span>
+  </div>
+  <div class="modlue-select" data-date="2018-02-14,2018-02-23" data-modlueName="modlue283 saveNone">
+    <img data-original="">
+    <span class="modlue-type-name">新春拜年</span>
+  </div>
+  <div class="modlue-select" data-date="2018-02-21" data-modlueName="modlue285">
+    <img data-original="images/modlue285x.jpg">
+    <span class="modlue-type-name">开工大吉</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue286 saveNone">
+    <img data-original="images/modlue286x.jpg">
+    <span class="modlue-type-name">拜年啦</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue287">
+    <img data-original="images/modlue287x.jpg">
+    <span class="modlue-type-name">恭贺新禧</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue284 saveNone">
+    <img data-original="images/modlue284x.jpg">
+    <span class="modlue-type-name">春节出行安全</span>
+  </div>
+  <div class="modlue-select" data-font="FZY3JW"  data-modlueName="modlue282 series saveNone">
+    <img data-original="images/modlue282x.jpg">
+    <span class="modlue-type-name">买车过年回家</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue273 series saveNone saleLogo sel-type">
+    <img data-original="images/modlue273x.jpg">
+    <span class="modlue-type-name">新能源政策</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="29" data-modlueName="modlue281 m180122 saveNone carCard">
+    <img data-original="images/modlue281x.jpg">
+    <span class="modlue-type-name">车主说发现</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1273" data-modlueName="modlue280 m180122 saveNone carCard">
+    <img data-original="images/modlue280x.jpg">
+    <span class="modlue-type-name">车主说科雷傲</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="308" data-modlueName="modlue279 m180122 saveNone carCard">
+    <img data-original="images/modlue279x.jpg">
+    <span class="modlue-type-name">车主说XT5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="76" data-modlueName="modlue278 m180122 saveNone carCard">
+    <img data-original="images/modlue278x.jpg">
+    <span class="modlue-type-name">车主说福睿斯</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="800" data-modlueName="modlue277 m180122 saveNone carCard">
+    <img data-original="images/modlue277x.jpg">
+    <span class="modlue-type-name">车主说DS6</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="800" data-modlueName="modlue276 m180122 saveNone carCard">
+    <img data-original="images/modlue276x.jpg">
+    <span class="modlue-type-name">车主说DS5LS</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="128" data-modlueName="modlue275 m180122 saveNone carCard">
+    <img data-original="images/modlue275x.jpg">
+
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue274 m180122 saveNone carCard">
+    <img data-original="images/modlue274x.jpg">
+    <span class="modlue-type-name">车主说CC</span>
+  </div>
+
+  <div class="modlue-select"  data-modlueName="modlue272">
+    <img data-original="images/modlue272x.jpg">
+    <span class="modlue-type-name">团队照3</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue271">
+    <img data-original="images/modlue271x.jpg">
+    <span class="modlue-type-name">团队照2</span>
+  </div>
+  <!-- <div class="modlue-select"  data-modlueName="modlue270 saveNone saleLogo series whitecarpic">
+    <img data-original="images/modlue270x.jpg">
+    <span class="modlue-type-name">青蛙の旅行</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue154 saveNone">
+    <img data-original="images/20171204a.jpg">
+    <span class="modlue-type-name">封面人物</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue269">
+    <img data-original="images/modlue269x.jpg">
+    <span class="modlue-type-name">年终团队照</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1242" data-modlueName="modlue268 m180122 saveNone carCard">
+    <img data-original="images/modlue268x.jpg">
+    <span class="modlue-type-name">自由光提车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="335" data-modlueName="modlue267 m180122 saveNone carCard">
+    <img data-original="images/modlue267x.jpg">
+    <span class="modlue-type-name">车主说致炫</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="12" data-modlueName="modlue266 m180122 saveNone carCard">
+    <img data-original="images/modlue266x.jpg">
+    <span class="modlue-type-name">车主说K3</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="28" data-modlueName="modlue265 m180122 saveNone carCard">
+    <img data-original="images/modlue265x.jpg">
+    <span class="modlue-type-name">车主说QX80</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="305" data-modlueName="modlue264 m180122 saveNone carCard">
+    <img data-original="images/modlue264x.jpg">
+    <span class="modlue-type-name">车主说轩朗</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1341" data-modlueName="modlue263 m180122 saveNone carCard">
+    <img data-original="images/modlue263x.jpg">
+    <span class="modlue-type-name">车主说CDX</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1341" data-modlueName="modlue262 m180122 saveNone carCard">
+    <img data-original="images/modlue262x.jpg">
+    <span class="modlue-type-name">车主说CDX</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue261 m180122 saveNone carCard">
+    <img data-original="images/modlue261x.jpg">
+    <span class="modlue-type-name">车主说迈腾</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue260 m180122 saveNone carCard">
+    <img data-original="images/modlue260x.jpg">
+    <span class="modlue-type-name">大众迈腾</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="225" data-modlueName="modlue259 m180122 saveNone carCard">
+    <img data-original="images/modlue259x.jpg">
+    <span class="modlue-type-name">车主说迈锐宝</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="3" data-modlueName="modlue258 m180122 saveNone carCard">
+    <img data-original="images/modlue258x.jpg">
+    <span class="modlue-type-name">车主说凌派</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="308" data-modlueName="modlue257 m180122 saveNone carCard">
+    <img data-original="images/modlue257x.jpg">
+    <span class="modlue-type-name">车主说ATSL</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="9" data-modlueName="modlue256 m180122 saveNone carCard">
+    <img data-original="images/modlue256x.jpg">
+    <span class="modlue-type-name">车主说D60</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="76" data-modlueName="modlue255 m180122 saveNone carCard">
+    <img data-original="images/modlue255x.jpg">
+    <span class="modlue-type-name">金牛座提车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="13" data-modlueName="modlue254 m180122 saveNone carCard">
+    <img data-original="images/modlue254x.jpg">
+    <span class="modlue-type-name">车主说博瑞</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="932" data-modlueName="modlue253 m180122 saveNone carCard">
+    <img data-original="images/modlue253x.jpg">
+    <span class="modlue-type-name">车主说H7</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="3" data-modlueName="modlue252 m180122 saveNone carCard">
+    <img data-original="images/modlue252x.jpg">
+    <span class="modlue-type-name">车主说冠道</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="76" data-modlueName="modlue251 m180122 saveNone carCard">
+    <img data-original="images/modlue251x.jpg">
+    <span class="modlue-type-name">车主说锐界</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="128" data-modlueName="modlue250 m180122 saveNone carCard">
+    <img data-original="images/modlue250x.jpg">
+    <span class="modlue-type-name">车主说X80</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="128" data-modlueName="modlue249 m180122 saveNone carCard">
+    <img data-original="images/modlue249x.jpg">
+    <span class="modlue-type-name">车主说5系</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue248 m180122 saveNone carCard">
+    <img data-original="images/modlue248x.jpg">
+    <span class="modlue-type-name">车主说Q5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue247 m180122 saveNone carCard">
+    <img data-original="images/modlue247x.jpg">
+    <span class="modlue-type-name">车主说A4L</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="205" data-modlueName="modlue246 m180122 saveNone carCard">
+    <img data-original="images/modlue246x.jpg">
+    <span class="modlue-type-name">车主说MINI</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="800" data-modlueName="modlue245 m180122 saveNone carCard">
+    <img data-original="images/modlue245x.jpg">
+    <span class="modlue-type-name">车主说DS5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="24" data-modlueName="modlue244 m180122 saveNone carCard">
+    <img data-original="images/modlue244x.jpg">
+    <span class="modlue-type-name">车主说V60</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="128" data-modlueName="modlue243 m180122 saveNone carCard">
+    <img data-original="images/modlue243x.jpg">
+    <span class="modlue-type-name">车主说525i</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="10" data-modlueName="modlue242 m180122 saveNone carCard">
+    <img data-original="images/modlue242x.jpg">
+    <span class="modlue-type-name">车主说皇冠</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="107" data-modlueName="modlue241 m180122 saveNone carCard">
+    <img data-original="images/modlue241x.jpg">
+    <span class="modlue-type-name">车主说宋</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="10" data-modlueName="modlue240 m180122 saveNone carCard">
+    <img data-original="images/modlue240x.jpg">
+    <span class="modlue-type-name">车主说陆巡</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="5" data-modlueName="modlue239 saveNone carCard">
+    <img data-original="images/modlue239x.jpg">
+    <span class="modlue-type-name">大众帕萨特</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue238 saveNone">
+    <img data-original="images/modlue238x.jpg">
+    <span class="modlue-type-name">买车过年</span>
+  </div>
+  <div class="modlue-select"  data-modlueName="modlue237 saveNone">
+    <img data-original="images/modlue237x.jpg">
+    <span class="modlue-type-name">等你下班</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="25" data-modlueName="modlue236 saveNone carCard">
+    <img data-original="images/modlue236x.jpg">
+    <span class="modlue-type-name">车主说A5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="49" data-modlueName="modlue235 saveNone carCard">
+    <img data-original="images/modlue235x.jpg">
+    <span class="modlue-type-name">车主说傲虎</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="5" data-modlueName="modlue234 saveNone carCard">
+    <img data-original="images/modlue234x.jpg">
+    <span class="modlue-type-name">车主说凌度</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue233 saveNone series">
+    <img data-original="images/modlue233x.jpg">
+    <span class="modlue-type-name">冲顶问答PK</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="107" data-modlueName="modlue232 saveNone carCard">
+    <img data-original="images/modlue232x.jpg">
+    <span class="modlue-type-name">比亚迪战报</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="128" data-modlueName="modlue231 saveNone carCard">
+    <img data-original="images/modlue231x.jpg">
+    <span class="modlue-type-name">车主说5系</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue230 saveNone carCard">
+    <img data-original="images/modlue230x.jpg">
+    <span class="modlue-type-name">车主说A4L</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="3" data-modlueName="modlue229 saveNone carCard">
+    <img data-original="images/modlue229x.jpg">
+    <span class="modlue-type-name">车主说雅阁</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="335" data-modlueName="modlue228 saveNone carCard">
+    <img data-original="images/modlue228x.jpg">
+    <span class="modlue-type-name">车主说雷凌</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="800" data-modlueName="modlue227 saveNone carCard">
+    <img data-original="images/modlue227x.jpg">
+    <span class="modlue-type-name">车主说DS5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="516" data-modlueName="modlue226 saveNone carCard">
+    <img data-original="images/modlue226x.jpg">
+    <span class="modlue-type-name">车主说T80</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="107" data-modlueName="modlue225 saveNone carCard">
+    <img data-original="images/modlue225x.jpg">
+    <span class="modlue-type-name">车主说宋DM</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue224 saveNone carCard">
+    <img data-original="images/modlue224x.jpg">
+    <span class="modlue-type-name">车主说Q7</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="10" data-modlueName="modlue223 saveNone carCard">
+    <img data-original="images/modlue223x.jpg">
+    <span class="modlue-type-name">车主说陆巡</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue222 input">
+      <img data-original="images/modlue222x.jpg">
+      <span class="modlue-type-name">交车啦!</span>
+    </div>
+  <div class="modlue-select" data-AppointModlue="13" data-modlueName="modlue221 saveNone">
+      <img data-original="images/modlue221x.jpg">
+      <span class="modlue-type-name">吉利战报二</span>
+    </div>
+  <div class="modlue-select" data-AppointModlue="13" data-modlueName="modlue220 saveNone">
+      <img data-original="images/modlue220x.jpg">
+      <span class="modlue-type-name">吉利战报一</span>
+    </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue219 saveNone carCard">
+      <img data-original="images/modlue219x_02.jpg">
+      <span class="modlue-type-name">车主聊迈腾</span>
+    </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue218 saveNone carCard">
+     <img data-original="images/modlue218_01.jpg">
+     <span class="modlue-type-name">车主说A3</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="76" data-modlueName="modlue217 saveNone carCard">
+     <img data-original="images/modlue217x_01.jpg">
+     <span class="modlue-type-name">车主说锐界</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="5" data-modlueName="modlue216 saveNone carCard">
+     <img data-original="images/modlue216x_01.jpg">
+     <span class="modlue-type-name">车主说帕萨特</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue215 saveNone carCard">
+     <img data-original="images/modlue215x_01.jpg">
+     <span class="modlue-type-name">车主说迈腾</span>
+  </div>
+  <div class="modlue-select" data-font="HYA5GJM_0" data-modlueName="modlue214 saveNone series serType">
+    <img data-original="images/modlue214x.jpg">
+    <span class="modlue-type-name">年度关键词</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue213 saveNone carCard">
+    <img data-original="images/modlue213x.jpg">
+    <span class="modlue-type-name">车主说速腾</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue212 saveNone carCard">
+    <img data-original="images/modlue212x.jpg">
+    <span class="modlue-type-name">车主说蔚领</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="2" data-modlueName="modlue211 saveNone carCard">
+    <img data-original="images/modlue211x.jpg">
+    <span class="modlue-type-name">车主说Golf</span>
+  </div>
+  <div class="modlue-select" data-font="FZKATJW" data-modlueName="modlue210 saveNone">
+    <img data-original="images/modlue210x.jpg">
+    <span class="modlue-type-name">你好,2018</span>
+  </div>
+  <div class="modlue-select" data-font="FZYTJW_0" data-modlueName="modlue209 saveNone">
+    <img data-original="images/modlue209x.jpg">
+    <span class="modlue-type-name">客户答谢卡</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue208 saveNone carCard">
+    <img data-original="images/modlue208x.jpg">
+    <span class="modlue-type-name">元旦快乐</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue201 saveNone">
+    <img data-original="images/modlue201x.jpg">
+    <span class="modlue-type-name">元旦促销</span>
+  </div>
+  <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue69 input tipmask">
+    <img data-original="images/modlue69x.png">
+    <span class="modlue-type-name">客户提车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="964" data-modlueName="modlue207 saveNone carCard">
+    <img data-original="images/modlue207x.jpg">
+    <span class="modlue-type-name">车主说S90</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="20" data-modlueName="modlue206 saveNone carCard">
+    <img data-original="images/modlue206x.jpg">
+    <span class="modlue-type-name">车主说7系</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="10" data-modlueName="modlue205 saveNone carCard">
+    <img data-original="images/modlue205x.jpg">
+    <span class="modlue-type-name">车主说皇冠</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="4" data-modlueName="modlue204 saveNone carCard">
+    <img data-original="images/modlue204x.jpg">
+    <span class="modlue-type-name">车主说C级</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue203 saveNone carCard">
+    <img data-original="images/modlue203x.jpg">
+    <span class="modlue-type-name">车主说Q3</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="1" data-modlueName="modlue202 saveNone carCard">
+    <img data-original="images/modlue202x.jpg">
+    <span class="modlue-type-name">车主说A3</span>
+  </div>
+  <!-- <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue136 saveNone">
+    <img data-original="images/modlue136x.jpg">
+    <span class="modlue-type-name">年底冲量</span>
+  </div> -->
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue197 saveNone carCard">
+    <img data-original="images/modlue197x.jpg">
+    <span class="modlue-type-name">睿骋CC </span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue186 saveNone">
+    <img data-original="images/modlue186x.jpg">
+    <span class="modlue-type-name">快来看车啊</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue167 saveNone">
+    <img data-original="images/modlue167x.jpg">
+    <span class="modlue-type-name">我们不一样</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue166 saveNone saleLogo">
+    <img data-original="images/modlue166x.jpg">
+    <span class="modlue-type-name">刘备国际版</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue165 saveNone saleLogo">
+    <img data-original="images/modlue165x.jpg">
+    <span class="modlue-type-name">张飞国际版</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue164 saveNone saleLogo">
+    <img data-original="images/modlue164x.jpg">
+    <span class="modlue-type-name">关羽国际版</span>
+  </div>
+
+  <div class="modlue-select" data-font="shaoer,HYA5GJM_0" data-modlueName="modlue161 saveNone series">
+    <img data-original="images/modlue161x.jpg?t=1213">
+    <span class="modlue-type-name">刘备买车</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer,HYA5GJM_0" data-modlueName="modlue160 saveNone series">
+    <img data-original="images/modlue160x.jpg?t=1213">
+    <span class="modlue-type-name">张飞买车</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer,HYA5GJM_0" data-modlueName="modlue159 saveNone series">
+    <img data-original="images/modlue159x.jpg?t=1213">
+    <span class="modlue-type-name">关羽买车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="13" data-modlueName="modlue158 saveNone">
+    <img data-original="images/modlue158x.jpg">
+    <span class="modlue-type-name">吉利汽车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="15" data-modlueName="modlue157 saveNone">
+    <img data-original="images/modlue157x.jpg">
+    <span class="modlue-type-name">东风日产</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue150 saveNone">
+    <img data-original="images/modlue150x.jpg">
+    <span class="modlue-type-name">买车请信我 </span>
+  </div>
+  <div class="modlue-select" data-font="HYA5GJM_0" data-modlueName="modlue151 saveNone">
+    <img data-original="images/modlue151x.jpg">
+    <span class="modlue-type-name">请信任我</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue149 saveNone series">
+    <img data-original="images/modlue149x.jpg">
+    <span class="modlue-type-name">买辆车过冬 </span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue148 saveNone">
+    <img data-original="images/modlue148x.jpg">
+    <span class="modlue-type-name">吃土求开单</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue139 saveNone">
+    <img data-original="images/modlue139x.jpg">
+    <span class="modlue-type-name">感恩客户</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="3" data-modlueName="modlue147 m1117 saveNone carCard">
+    <img data-original="images/modlue147x.jpg">
+    <span class="modlue-type-name">广本飞度</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="335" data-modlueName="modlue146 m1117 saveNone carCard">
+    <img data-original="images/modlue146x.jpg">
+    <span class="modlue-type-name">丰田凯美瑞</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="78" data-modlueName="modlue145 m1117 saveNone carCard">
+    <img data-original="images/modlue145x.jpg">
+    <span class="modlue-type-name">瑞风M4</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="78" data-modlueName="modlue144 m1117 saveNone carCard">
+    <img data-original="images/modlue144x.jpg">
+    <span class="modlue-type-name">瑞风M6</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="932" data-modlueName="modlue143 m1117 saveNone carCard">
+    <img data-original="images/modlue143x.jpg">
+    <span class="modlue-type-name">哈弗H6</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="316" data-modlueName="modlue142 m1117 saveNone carCard">
+    <img data-original="images/modlue142x.jpg">
+    <span class="modlue-type-name">Levante</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="13" data-modlueName="modlue141 m1117 saveNone carCard">
+    <img data-original="images/modlue141x.jpg">
+    <span class="modlue-type-name">帝豪GL</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="335" data-modlueName="modlue140 saveNone carCard">
+    <img data-original="images/modlue140x.jpg">
+    <span class="modlue-type-name">凯美瑞</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue138 saveNone input">
+    <img data-original="images/modlue138x.jpg">
+    <span class="modlue-type-name">感恩节</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue137 saveNone">
+    <img data-original="images/modlue137x.jpg">
+    <span class="modlue-type-name">行业揭秘</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer" data-modlueName="modlue90  input">
+    <img data-original="images/modlue90x.jpg">
+    <span class="modlue-type-name">车展优惠价</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue65 saveNone input tipmask">
+    <img data-original="images/modlue65x.jpg">
+    <span class="modlue-type-name">车展</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue135 saveNone jumpLink">
+    <img data-original="images/modlue135x.jpg">
+    <span class="modlue-type-name">我的二维码</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="670" data-modlueName="modlue134 saveNone carCard">
+    <img data-original="images/modlue134x.jpg">
+    <span class="modlue-type-name">启辰D60</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer" data-modlueName="modlue133 saveNone series serpicNone">
+    <img data-original="images/modlue133x.jpg">
+    <span class="modlue-type-name">天蝎座指南</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue132 saveNone">
+    <img data-original="images/modlue132x.jpg">
+    <span class="modlue-type-name">汽车讲堂</span>
+  </div>
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue129 series viewphoto input">
+    <img data-original="images/modlue129x.jpg">
+    <span class="modlue-type-name">每日一图</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue127 saveNone">
+    <img data-original="images/modlue127x.jpg">
+    <span class="modlue-type-name">每日一贴</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue126 saveNone carCard">
+    <img data-original="images/modlue126x.jpg">
+    <span class="modlue-type-name">置换补贴</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue125 saveNone carCard">
+    <img data-original="images/modlue125x.jpg">
+    <span class="modlue-type-name">免购置税</span>
+  </div>
+
+  <div class="modlue-select" data-modlueName="modlue124 saveNone jumpLink">
+    <img data-original="images/modlue124x.jpg">
+    <span class="modlue-type-name">砍价不如砍我</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue123 saveNone series">
+    <img data-original="images/modlue123x.jpg">
+    <span class="modlue-type-name">新闻模板</span>
+  </div>
+  <!-- <div class="modlue-select" data-modlueName="modlue122 saveNone series">
+    <img data-original="images/modlue122x.jpg">
+    <span class="modlue-type-name">品质新标杆</span>
+  </div> -->
+  <div class="modlue-select" data-AppointModlue="307" data-modlueName="modlue119 saveNone carCard">
+    <img data-original="images/modlue119x.jpg">
+    <span class="modlue-type-name">众泰Z700H</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="40" data-modlueName="modlue118 saveNone carCard">
+    <img data-original="images/modlue118x.jpg">
+    <span class="modlue-type-name">雷诺卡缤</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="5" data-modlueName="modlue117 saveNone carCard">
+    <img data-original="images/modlue117x.jpg">
+    <span class="modlue-type-name">途安L</span>
+  </div>
+  <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue100 saveNone series">
+    <img data-original="images/modlue100x.jpg">
+    <span class="modlue-type-name">金九银十</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue51 saveNone input saleLogo">
+    <img data-original="images/modlue51x.jpg">
+    <span class="modlue-type-name">月底冲量</span>
+  </div>
+  <!-- <div class="modlue-select" data-AppointModlue="modlue114" data-modlueName="modlue114 saveNone">
+    <img data-original="images/modlue114x.jpg">
+    <span class="modlue-type-name">秒杀福睿斯</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="modlue114" data-modlueName="modlue115 saveNone">
+    <img data-original="images/modlue115x.jpg">
+    <span class="modlue-type-name">AR领红包</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue53 saveNone textarea">
+    <img data-original="images/modlue53x.jpg">
+    <span class="modlue-type-name">团购盛会</span>
+  </div>
+  <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue58 saveNone input">
+    <img data-original="images/modlue58x.jpg">
+    <span class="modlue-type-name">周末大放血</span>
+  </div>
+  <div class="modlue-select" data-font="HYK1GJM_0" data-modlueName="modlue81 saveNone input">
+    <img data-original="images/modlue81x.jpg">
+    <span class="modlue-type-name">厂家直销会</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue80 saveNone">
+    <img data-original="images/modlue80x.jpg">
+    <span class="modlue-type-name">经理签售会</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="modlue76" data-modlueName="modlue110 saveNone carCard">
+    <img data-original="images/modlue110x.jpg">
+    <span class="modlue-type-name">现代瑞纳</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="49" data-modlueName="modlue109 saveNone carCard">
+    <img data-original="images/modlue109x.jpg">
+    <span class="modlue-type-name">斯巴鲁XV</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="4" data-AppointModlue-type="brandIds" data-modlueName="modlue108 saveNone carCard">
+    <img data-original="images/modlue108x.jpg">
+    <span class="modlue-type-name">奔驰S级</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer" data-modlueName="modlue107 saveNone">
+    <img data-original="images/modlue107x.jpg">
+    <span class="modlue-type-name">生活不易</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="6" data-modlueName="modlue106 saveNone carCard">
+    <img data-original="images/modlue106x.jpg">
+    <span class="modlue-type-name">雪铁龙天逸</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue105 saveNone">
+    <img data-original="images/modlue105x.jpg">
+    <span class="modlue-type-name">长安CS95</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue104 saveNone">
+    <img data-original="images/modlue104x.jpg">
+    <span class="modlue-type-name">苦命销售</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue103 saveNone series whitecarpic">
+    <img data-original="images/modlue103x.jpg">
+    <span class="modlue-type-name">iPhoneX</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue102 saveNone series whitecarpic">
+    <img data-original="images/modlue102x.jpg">
+    <span class="modlue-type-name">iPhoneX</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue101 saveNone chat series scale3">
+    <img data-original="images/modlue101x.jpg">
+    <span class="modlue-type-name">iPhoneX</span>
+  </div>
+  <!-- <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue99 saveNone series">
+    <img data-original="images/modlue99x.jpg">
+    <span class="modlue-type-name">薛之谦</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue98 saveNone series">
+    <img data-original="images/modlue98x.jpg">
+    <span class="modlue-type-name">教师节快</span>
+  </div>
+  <!-- <div class="modlue-select" data-modlueName="modlue97 saveNone">
+    <img data-original="images/modlue97bg.jpg">
+    <span class="modlue-type-name">国足亚洲杯</span>
+  </div> -->
+  <div class="modlue-select" data-font="hyk2gjm" data-modlueName="modlue96 saveNone series">
+    <img data-original="images/modlue96x.jpg">
+    <span class="modlue-type-name">迎战开学季</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="12,112,7523" data-modlueName="modlue95 saveNone carCard">
+    <img data-original="images/modlue95x.jpg">
+    <span class="modlue-type-name">起亚凯绅</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="12,112,7523" data-modlueName="modlue94 saveNone carCard">
+    <img data-original="images/modlue94x.jpg">
+    <span class="modlue-type-name">KX Cross</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="571" data-AppointModlue-type="brandIds" data-modlueName="modlue93 saveNone carCard">
+    <img data-original="images/modlue93x.jpg">
+    <span class="modlue-type-name">传祺GS7</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="571" data-AppointModlue-type="brandIds" data-modlueName="modlue92 saveNone carCard">
+    <img data-original="images/modlue92x.jpg">
+    <span class="modlue-type-name">传祺GS3</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue91 saveNone">
+    <img data-original="images/modlue91x.jpg">
+    <span class="modlue-type-name">浪漫七夕</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="375" data-modlueName="modlue89 saveNone carCard">
+    <img data-original="images/modlue89x.jpg">
+    <span class="modlue-type-name">斯柯达明锐</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="375" data-modlueName="modlue88 saveNone carCard">
+    <img data-original="images/modlue88x.jpg">
+    <span class="modlue-type-name">明锐旅行车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="307" data-modlueName="modlue87 saveNone carCard">
+    <img data-original="images/modlue87x.jpg">
+    <span class="modlue-type-name">众泰T300</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="38" data-AppointModlue-type="brandIds" data-modlueName="modlue86 saveNone carCard">
+    <img data-original="images/modlue86x.jpg">
+    <span class="modlue-type-name">Jeep</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="111" data-modlueName="modlue85 saveNone carCard">
+    <img data-original="images/modlue85x.jpg">
+    <span class="modlue-type-name">景逸X6</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="111" data-modlueName="modlue84 saveNone carCard">
+    <img data-original="images/modlue84x.jpg">
+    <span class="modlue-type-name">景逸X5</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="16" data-modlueName="modlue83 saveNone">
+    <img data-original="images/modlue83x.jpg">
+    <span class="modlue-type-name">东南DX7</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue82 saveNone series">
+    <img data-original="images/modlue82x.jpg">
+    <span class="modlue-type-name">我们要买车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue79 saveNone">
+    <img data-original="images/modlue79x.jpg">
+    <span class="modlue-type-name">为灾区祈福</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue78 input">
+    <img data-original="images/modlue78x.jpg">
+    <span class="modlue-type-name">恭喜提车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="660" data-modlueName="modlue77 saveNone carCard">
+    <img data-original="images/modlue77x.jpg">
+    <span class="modlue-type-name">D90信息卡</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="113" data-modlueName="modlue76 saveNone carCard">
+    <img data-original="images/modlue76x.jpg">
+    <span class="modlue-type-name">伊兰特EV</span>
+  </div>
+  <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue75 saveNone series">
+    <img data-original="images/modlue75x.jpg">
+    <span class="modlue-type-name">战狼2</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124,577" data-AppointModlue-type="brandIds" data-modlueName="modlue73 saveNone carCard">
+    <img data-original="images/modlue73x.jpg">
+    <span class="modlue-type-name">A800</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="77" data-modlueName="modlue74 saveNone">
+    <img data-original="images/modlue74x.jpg">
+    <span class="modlue-type-name">骁途</span>
+  </div>
+  <div class="modlue-select" data-font="FZZYJW" data-modlueName="modlue72 saveNone">
+    <img data-original="images/modlue72x.jpg">
+    <span class="modlue-type-name">买车送男神</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="124,577" data-AppointModlue-type="brandIds" data-modlueName="modlue71 saveNone">
+    <img data-original="images/modlue71x.jpg">
+    <span class="modlue-type-name">长安CS55</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="38" data-AppointModlue-type="brandIds" data-modlueName="modlue70 saveNone">
+    <img data-original="images/modlue70x.png">
+    <span class="modlue-type-name">Jeep生日月</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue68 saveNone series">
+    <img data-original="images/modlue68x.png">
+    <span class="modlue-type-name">Freestyle</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue66 saveNone">
+    <img data-original="images/modlue66x.jpg">
+    <span class="modlue-type-name">现实的差距</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue67 saveNone chat series scale3">
+    <img data-original="images/modlue67x.jpg">
+    <span class="modlue-type-name">牛魔王</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue64 saveNone input">
+    <img data-original="images/modlue64x.jpg">
+    <span class="modlue-type-name">千年等一回</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue59 saveNone textarea saleLogo">
+    <img data-original="images/modlue59x.jpg">
+    <span class="modlue-type-name">买车去</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue63 saveNone chat series scale3">
+    <img data-original="images/modlue63x.jpg">
+    <span class="modlue-type-name">去放羊</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue62 saveNone">
+    <img data-original="images/modlue62x.jpg">
+    <span class="modlue-type-name">为自己代言</span>
+  </div>
+  <div class="modlue-select" data-font="HYK2GJM_1" data-modlueName="modlue61 saveNone">
+    <img data-original="images/modlue61x.jpg">
+    <span class="modlue-type-name">我在等你</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue60 saveNone">
+    <img data-original="images/modlue60x.jpg">
+    <span class="modlue-type-name">高考海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue56 saveNone series">
+    <img data-original="images/modlue56x.jpg">
+    <span class="modlue-type-name">藤原拓海</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue57 saveNone">
+    <img data-original="images/modlue57x.jpg">
+    <span class="modlue-type-name">变形金刚</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue55 saveNone">
+    <img data-original="images/modlue55x.jpg">
+    <span class="modlue-type-name">王者荣耀</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue52 saveNone input2">
+    <img data-original="images/modlue52x.jpg">
+    <span class="modlue-type-name">团购盛会</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue54">
+    <img data-original="images/modlue54x.jpg">
+    <span class="modlue-type-name">优惠政策</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue50 saveNone">
+    <img data-original="images/modlue50x.jpg">
+    <span class="modlue-type-name">搞个大新闻</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue49 saveNone textarea">
+    <img data-original="images/modlue49x.jpg">
+    <span class="modlue-type-name">新闻速递</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="16" data-modlueName="modlue41 saveNone chat-bottom">
+    <img data-original="images/modlue34x.jpg">
+    <span class="modlue-type-name">东南DX3</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="16" data-modlueName="modlue42 saveNone chat-bottom">
+    <img data-original="images/modlue34x.jpg">
+    <span class="modlue-type-name">东南DX7</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="124" data-modlueName="modlue36 saveNone chat-bottom">
+    <img data-original="images/modlue34x.jpg">
+    <span class="modlue-type-name">长安汽车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="78" data-modlueName="modlue35 saveNone chat-bottom">
+    <img data-original="images/modlue34x.jpg">
+    <span class="modlue-type-name">江淮汽车</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="579" data-modlueName="modlue34 saveNone chat-bottom">
+    <img data-original="images/modlue34x.jpg">
+    <span class="modlue-type-name">宝骏汽车</span>
+  </div>
+  <!-- <div class="modlue-select" data-modlueName="modlue27">
+    <img data-original="images/modlue27x.jpg">
+    <span class="modlue-type-name">500元油卡</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue26">
+    <img data-original="images/modlue26x.jpg">
+    <span class="modlue-type-name">提车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue25">
+    <img data-original="images/modlue25x.jpg">
+    <span class="modlue-type-name">提车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue24">
+    <img data-original="images/modlue24x.jpg">
+    <span class="modlue-type-name">提车</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue23">
+    <img data-original="images/modlue23x.jpg">
+    <span class="modlue-type-name">加油</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue22">
+    <img data-original="images/modlue22x.jpg">
+    <span class="modlue-type-name">品牌</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue21">
+    <img data-original="images/modlue21x.jpg">
+    <span class="modlue-type-name">有梦就去追</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue16">
+    <img data-original="images/modlue16x.jpg">
+    <span class="modlue-type-name">维修保养</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue15">
+    <img data-original="images/modlue15x.jpg">
+    <span class="modlue-type-name">专业维修</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue14">
+    <img data-original="images/modlue14x.jpg">
+    <span class="modlue-type-name">原厂保修</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue13">
+    <img data-original="images/modlue13x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue12">
+    <img data-original="images/modlue12x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue11">
+    <img data-original="images/modlue11x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue10">
+    <img data-original="images/modlue10x.jpg">
+    <span class="modlue-type-name">原厂保修</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue09">
+    <img data-original="images/modlue09x.jpg">
+    <span class="modlue-type-name">新车到店</span>
+  </div>
+  <!--  -->
+  <div class="modlue-select" data-modlueName="modlue156 saveNone">
+    <img data-original="images/modlue156x.jpg">
+    <span class="modlue-type-name">余文乐</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue155 saveNone input">
+    <img data-original="images/modlue155x.jpg">
+    <span class="modlue-type-name">双十二活动</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue163 saveNone series input">
+    <img data-original="images/modlue163x.jpg">
+    <span class="modlue-type-name">冬至活动</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue200 saveNone series">
+    <img data-original="images/modlue200x.jpg">
+    <span class="modlue-type-name">圣诞节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue199 saveNone">
+    <img data-original="images/modlue199x.jpg">
+    <span class="modlue-type-name">圣诞节促销</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue198 saveNone series">
+    <img data-original="images/modlue198x.jpg">
+    <span class="modlue-type-name">冬至温情版</span>
+  </div>
+  <div class="modlue-select" data-AppointModlue="38" data-AppointModlue-type="brandIds" data-modlueName="modlue162 saveNone">
+    <img data-original="images/modlue162x.jpg">
+    <span class="modlue-type-name">Jeep倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue187 saveNone">
+    <img data-original="images/modlue187x.jpg">
+    <span class="modlue-type-name">科比</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue29">
+    <img data-original="images/modlue29x.jpg">
+    <span class="modlue-type-name">520</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue28">
+    <img data-original="images/modlue28x.jpg">
+    <span class="modlue-type-name">爱你无价</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue38 saveNone input">
+    <img data-original="images/modlue38x.jpg">
+    <span class="modlue-type-name">儿童节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue33 saleCode input">
+    <img data-original="images/modlue33x.jpg">
+    <span class="modlue-type-name">粽情放价</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue37 saveNone">
+    <img data-original="images/modlue37x.jpg">
+    <span class="modlue-type-name">端午节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue32">
+    <img data-original="images/modlue32x.jpg">
+    <span class="modlue-type-name">粽情放价</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue153 saveNone">
+    <img data-original="images/modlue153x.jpg">
+    <span class="modlue-type-name">购车日历</span>
+  </div>
+  <div class="modlue-select" data-font="shaoer" data-modlueName="modlue152 saveNone series">
+    <img data-original="images/modlue152x.jpg">
+    <span class="modlue-type-name">月底冲量</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue121 saveNone series serprice">
+    <img data-original="images/modlue121x.jpg">
+    <span class="modlue-type-name">购置税倒计时</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue120 saveNone">
+    <img data-original="images/modlue120x.jpg">
+    <span class="modlue-type-name">购置税优惠</span>
+  </div>
+  <div class="modlue-select"  data-font="HYA5GJM_0" data-modlueName="modlue131 saveNone">
+    <img data-original="images/modlue131x.jpg">
+    <span class="modlue-type-name">优惠辣么大</span>
+  </div>
+  <div class="modlue-select"  data-font="HYA5GJM_0" data-modlueName="modlue130 saveNone">
+    <img data-original="images/modlue130x.jpg">
+    <span class="modlue-type-name">双十一到了</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue128 saveNone">
+    <img data-original="images/modlue128x.jpg">
+    <span class="modlue-type-name">万圣节</span>
+  </div>
+  <!-- <div class="modlue-select" data-modlueName="modlue31 saleCode textarea">
+    <img data-original="images/modlue31x.jpg">
+    <span class="modlue-type-name">粽情放价</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue30">
+    <img data-original="images/modlue30x.jpg">
+    <span class="modlue-type-name">粽情放价</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue39 saleCode textarea">
+    <img data-original="images/modlue39x.jpg">
+    <span class="modlue-type-name">爱不多言</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue40 saveNone">
+    <img data-original="images/modlue40x.jpg">
+    <span class="modlue-type-name">爱不多言</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue43 saveNone input">
+    <img data-original="images/modlue43x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue48 saveNone">
+    <img data-original="images/modlue48x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue47 saveNone">
+    <img data-original="images/modlue47x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue46 saveNone">
+    <img data-original="images/modlue46x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue45 saveNone input">
+    <img data-original="images/modlue45x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue44 saveNone">
+    <img data-original="images/modlue44x.jpg">
+    <span class="modlue-type-name">父亲节海报</span>
+  </div>
+  <!-- <div class="modlue-select" data-modlueName="modlue116 saveNone saleLogo">
+    <img data-original="images/modlue116x.jpg">
+    <span class="modlue-type-name">出行安全</span>
+  </div> -->
+  <div class="modlue-select" data-modlueName="modlue113 saveNone series">
+    <img data-original="images/modlue113x.jpg">
+    <span class="modlue-type-name">中秋回家</span>
+  </div>
+  <div class="modlue-select" data-modlueName="modlue112 saveNone">
+    <img data-original="images/modlue112x.jpg">
+    <span class="modlue-type-name">假期作业题</span>
+  </div>
+  <div class="modlue-select" data-font="FZY4JW" data-modlueName="modlue111 saveNone input">
+    <img data-original="images/modlue111x.jpg">
+    <span class="modlue-type-name">国庆中秋</span>
+  </div>
+  <!--  -->
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue185 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue185</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue184 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue184</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue183 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue183</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue182 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue182</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue181 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue181</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue180 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue180</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue179 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue179</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue178 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue178</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue177 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue177</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue176 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue176</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue175 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue175</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue174 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue174</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue173 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue173</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue172 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue172</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue171 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue171</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue170 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue170</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue169 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue169</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue168 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue168</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue188 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue188</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue189 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue189</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue190 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue190</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue191 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue191</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue192 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue192</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue193 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue193</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue194 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue194</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue195 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue195</span>
+  </div>
+  <div class="modlue-select"  data-AppointModlue="modlue168" data-modlueName="modlue196 saveNone ka-171219">
+    <img data-original="//www1.pcauto.com.cn/images/blank.gif">
+    <span class="modlue-type-name">modlue196</span>
+  </div>
+  <!--  -->
+</div>
+<div class="modlue-btn">
+  <a href="javascript:;" target="_self" title="">确认选择</a>
+  <p class="cover-tip-txt">以上为示例效果，仅供参考</p>
+</div>
+<!-- 模板选择 E -->
+<!-- 生成图片 or 重新选择 -->
+<div class="save-links" id="save-links">
+  <a href="javascript:;" class="link prev-btn" target="_self">重选模板</a>
+  <a href="javascript:;" class="link change-btn" target="_self">更换图片</a>
+  <a href="javascript:;" class="link save-btn" id="save-xn" target="_self">生成海报</a>
+  <a href="javascript:;" class="none" id="save" target="_self"></a>
+</div>
+<!-- 保存图片 btn -->
+<div class="save-success-link" id="save-success-link">
+  <div style="overflow: hidden;position: relative;">
+    <p class="left">记得长按保存图片到相册哦</p>
+    <a href="javascript:;" target="_self" class="close-btn">x</a>
+  </div>
+  <div style="overflow: hidden;margin-top: -.2rem;">
+    <p class="left">
+      <img src="images/saveApptip.png">
+    </p>
+    <a href="//mrobot.pcauto.com.cn/s/pocket/nocache/common/download.xsp" target="_self" class="app-down-url-btn">抢先体验</a>
+  </div>
+</div>
+<!--  -->
+<div class="sale-code" id="sale-code">
+  <div id="sale-imgCrop" class="sale-imgCrop"></div>
+  <div class="sale-code-btn">
+    <a href="javascript:;"  class="sale-code-close" id="sale-code-close" target="_self">取消</a>
+    <a href="javascript:;" target="_self" class="sale-code-save" id="sale-code-save">确定</a>
+  </div>
+</div>
+<!-- 车系弹窗 -->
+<div class="series-pop" id="series-pop">
+  <div class="series-con">
+    <div class="series-tit">请先选择主营车系</div>
+    <div class="series-list"></div>
+    <div class="series-btns">
+      <a href="javascript:;" target="_self" title="" class="series-btn">确定选择</a>
+    </div>
+  </div>
+</div>
+<!-- 配置图片弹窗 -->
+<div class="series-pop" id="viewphoto-pop">
+  <div class="series-con">
+    <div class="series-tit">选择图片</div>
+    <div class="series-list"></div>
+    <div class="series-btns">
+      <a href="javascript:;" target="_self" title="" class="viewphoto-btn">确定选择</a>
+    </div>
+  </div>
+</div>
+<!-- app 选择车系 -->
+<div class="app-series-pop">
+  <b class="fl">添加选择车系</b>
+  <a class="app-change-pic-btn" href="pcautoaction://choose-photo/" target="_self" title="">更换图片</a>
+  <span class="fr">请选择</span>
+</div>
+<script src="//js.3conline.com/min/temp/v1/lib-jquery1.10.2.js"></script>
+<script src="//www1.pcauto.com.cn/zt/gz20161228pockethb/exif.js"></script>
+<script src="//www1.pcauto.com.cn/wap/pocket/20170516poster/js/conl.js?t=2"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/poster/js/canvas2image.js"></script>
+<!-- <script src="//js.3conline.com/pcauto/2016/autopocket/poster/js/html2canvas.js"></script> -->
+<script src="js/html2canvasNew.js"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/aides/js/qrcode.js"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/jquery.lazyload.js"></script>
+<script src="js/chat.js?t=0913"></script>
+<script src="js/main.js?t=10"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/aides/js/share.js"></script>
+<script src="//js.3conline.com/pcauto/2016/autopocket/wx_astrict.js"></script>
+<script>
+</script>
+</body>
+</html>
